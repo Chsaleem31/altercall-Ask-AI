@@ -14,7 +14,7 @@ export const handler = async (event) => {
         // Prepare the conversation history for OpenAI API
         const conversation = [
             { role: 'system', content: 'You are a helpful assistant.' },
-            { role: 'user', content: `Suggest me a workout for one day ${userAge}-year-old with a height of ${userHeight} feet.` },
+            { role: 'user', content: `Suggest me a workout for one day i am ${userAge} year old with a height of ${userHeight} feet.` },
         ];
 
         // Make a request to OpenAI API using fetch
