@@ -4,7 +4,7 @@ Resources:
   MyApi:
     Type: "AWS::Serverless::Api"
     Properties:
-      StageName: "dev" # You can customize the stage name
+      StageName: "dev" 
 
   MyFunction:
     Type: "AWS::Serverless::Function"
@@ -20,5 +20,5 @@ Resources:
           Type: Api
           Properties:
             Path: /my-endpoint
-            Method: post # Adjust the HTTP method as needed
+            Method: post 
             RestApiId: !Ref MyApi
